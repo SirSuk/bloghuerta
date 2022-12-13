@@ -1,0 +1,280 @@
+/*ROOT*/
+/*font-family: 'Bowlby One SC', cursive;
+font-family: 'Rancho', cursive;
+font-family: 'Shrikhand', cursive;*/
+:ROOT{
+    --fuenteLogo:'Fredoka', sans-serif;
+    --fuenteHeading:'Francois One', sans-serif;
+    --fuenteParrafos:'Aclonica', sans-serif;
+    --verde: #5ac586; 
+    --claro: #e1e1e1;   
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    
+}
+
+/*GLOBALES*/
+html {
+        background-color: rgb(228, 240, 187);    box-sizing: border-box;
+        font-size: 62.5%;
+     }
+
+*, *:before,*:after{
+    box-sizing: inherit;
+}   
+
+body { 
+    font-family: var(--fuenteHeading);
+    font-size: 1.8rem;
+    line-height: 1.7;
+    }
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+            }
+.contenedor__nos{
+    height: auto;
+}
+
+p{
+font-size: larger;
+
+
+}
+a{
+    text-decoration: none;
+    color: var(--blanco)
+}
+
+/*h1 h2 h3 h4 {
+    font-family: var(--fuenteLogo);
+
+            }*/
+h1 {
+    font-size: 4.8rem;
+ 
+}
+h2 {
+    font-size: 4rem;
+    }
+h3 {
+    font-size: 3.2rem;
+    
+    }
+h4 {
+    font-size: 2.8rem;
+  }
+
+img {
+    max-width: 100%;
+  }
+.no-margin{
+      margin: 0;
+  }
+.no-padding{
+      padding: 0;
+  }
+.centrar-texto {
+      text-align: center;
+  }
+.barra a{
+    font-family: var(--fuenteLogo);
+}
+
+/* HEADERRRRRRRRRR */
+
+.header {
+      background-image: url(../img/oo.jpeg);
+      height: 60rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      opacity:0.6;
+          }
+.header img{
+    opacity: 20%;
+}
+
+.header__texto {
+        text-align:center;
+        color: var(--blanco);
+        font-family: var(--fuenteLogo);
+        margin-top: 4rem;
+     }
+
+.header__texto h1{
+        font-size: 6rem;
+    }
+
+@media (min-width:500px){
+.p{
+    line-height: 1.2;
+}
+}
+@media (min-width:768px)
+{
+    .header__texto{
+        margin-top: 12rem;
+    }
+.barra {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    color: var(--blanco);  
+
+}
+  
+.logo__nombre{
+    font-weight: 50rem;
+}
+.logo__bold {
+    font-weight: 10rem;
+}
+
+.header a:hover{  color:rgb(182, 27, 148);  }
+
+/*********** NAVEGACION ***********************/
+
+}
+@media (max-width:768px){
+.navegacion {
+    display:flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.navegacion__enlace{
+    
+    display:block;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blanco);
+    
+}
+
+
+}
+
+.navegacion a:hover{
+    color:rgb(180, 103, 16); 
+}
+
+
+/* CONTENIDO PRINCIPAL BLOG */
+
+@media (min-width:768px){
+.contenido-principal{
+display:grid;
+grid-template-columns: 2fr 1fr;
+column-gap: 4rem;
+}
+
+}
+.contenido-principal img{
+    width: 200rem;
+    height: 40rem;
+}
+
+.entrada{
+    border-bottom: 2px solid var(--claro);
+    margin-bottom: 2rem;
+}
+.entrada p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.entrada:last-of-type{
+    border:none;
+    margin:0;
+}
+.centrar-texto{
+    text-align: center;
+}
+.boton{
+    display:block;
+    font-family: var(--fuenteLogo);
+    text-align: center;
+    color: var(--blanco);
+    padding: 1   rem 3rem;
+    font-size: 1.8;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+@media (min-width:768px){
+    .boton {
+    display: inline-block ;
+    width: 200px;
+    color: var(--blanco);  
+    }
+}
+
+.boton--primario{
+    background-color: var(--verde)
+}
+
+@media (min-width:768px) {
+    .boton--primario{
+    padding: 1rem 3rem ;
+    }
+}
+
+/* SIDEBAR */
+
+.sidebar p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.boton--secundario{
+    background-color: var(--verde);
+}
+
+@media (min-width:768px){
+.boton--secundario{
+padding: 1rem 3rem ;
+}
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-curso {
+    border-bottom: 2px solid var(--claro);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type{
+    border:none;
+    margin-bottom: 0;
+}
+.widget-curso__label{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+}
+.widget-curso__info{
+    font-weight: normal;
+}
+.widget-curso__info .widget-curso__label{
+    font-size: 2rem;
+}
+
+.footer{
+    background-color: var(--negro);
+    padding: 3rem 0;
+    margin-top:4rem;
+}
+
+@media (min-width:768px){
+.footer navegacion{
+    display: inline-block;
+    align-items: left;
+}
+}
+.titulares{
+    text-transform: uppercase;
+}
