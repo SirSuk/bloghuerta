@@ -15,7 +15,8 @@ font-family: 'Shrikhand', cursive;*/
 
 /*GLOBALES*/
 html {
-        background-color: rgb(228, 240, 187);    box-sizing: border-box;
+        background-image: linear-gradient(to bottom, #a8bb98, #95aa86, #819975, #6f8965, #5c7955)  ; 
+        box-sizing: border-box;
         font-size: 62.5%;
      }
 
@@ -91,7 +92,9 @@ img {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      opacity:0.6;
+      opacity:0.5;
+      -webkit-box-shadow: -1px 7px 18px -6px rgba(0,0,0,0.65); 
+box-shadow: -1px 7px 18px -6px rgba(0,0,0,0.65);
           }
 .header img{
     opacity: 20%;
@@ -109,6 +112,7 @@ img {
     }
 
 @media (min-width:500px){
+
 .p{
     line-height: 1.2;
 }
@@ -116,7 +120,7 @@ img {
 @media (min-width:768px)
 {
     .header__texto{
-        margin-top: 12rem;
+        margin-top: 7rem;
     }
 .barra {
     display:flex;
@@ -145,7 +149,7 @@ img {
 @media (max-width:768px){
 .navegacion {
     display:flex;
-    gap: 2rem;
+    gap: 1rem;
     flex-direction: column;
 }
 .navegacion__enlace{
@@ -153,7 +157,7 @@ img {
     display:block;
     text-align: center;
     font-size: 2rem;
-    color: var(--blanco);
+     color: var(--blanco);
     
 }
 
@@ -277,4 +281,5 @@ font-weight: bold;
 }
 .titulares{
     text-transform: uppercase;
+    text-align: center;
 }
